@@ -1,0 +1,146 @@
+{
+  "top_features": [
+    {
+      "feature": "Shipping Mode_First Class",
+      "importance": 1.14931,
+      "correlation_coefficient": 0.6413,
+      "correlation_direction": "Risk Increasing",
+      "interpretation": "Higher feature values are associated with elevated late-delivery log-odds."
+    },
+    {
+      "feature": "Days for shipment (scheduled)",
+      "importance": 0.71628,
+      "correlation_coefficient": -0.6459,
+      "correlation_direction": "Risk Decreasing",
+      "interpretation": "Higher feature values provide operational buffer, reducing late-delivery log-odds."
+    },
+    {
+      "feature": "Type_TRANSFER",
+      "importance": 0.47129,
+      "correlation_coefficient": -0.7982,
+      "correlation_direction": "Risk Decreasing",
+      "interpretation": "Higher feature values provide operational buffer, reducing late-delivery log-odds."
+    },
+    {
+      "feature": "order_hour",
+      "importance": 0.28711,
+      "correlation_coefficient": 0.7448,
+      "correlation_direction": "Risk Increasing",
+      "interpretation": "Higher feature values are associated with elevated late-delivery log-odds."
+    },
+    {
+      "feature": "Shipping Mode_Second Class",
+      "importance": 0.14873,
+      "correlation_coefficient": 0.6461,
+      "correlation_direction": "Risk Increasing",
+      "interpretation": "Higher feature values are associated with elevated late-delivery log-odds."
+    },
+    {
+      "feature": "Order Item Total",
+      "importance": 0.02238,
+      "correlation_coefficient": -0.5554,
+      "correlation_direction": "Risk Decreasing",
+      "interpretation": "Higher feature values provide operational buffer, reducing late-delivery log-odds."
+    },
+    {
+      "feature": "Sales",
+      "importance": 0.02187,
+      "correlation_coefficient": 0.8338,
+      "correlation_direction": "Risk Increasing",
+      "interpretation": "Higher feature values are associated with elevated late-delivery log-odds."
+    },
+    {
+      "feature": "Order Region_Western Europe",
+      "importance": 0.01509,
+      "correlation_coefficient": 0.6565,
+      "correlation_direction": "Risk Increasing",
+      "interpretation": "Higher feature values are associated with elevated late-delivery log-odds."
+    },
+    {
+      "feature": "Order Item Discount",
+      "importance": 0.0123,
+      "correlation_coefficient": 0.0197,
+      "correlation_direction": "Risk Decreasing",
+      "interpretation": "Binary indicator presence associated with late-delivery outcome."
+    },
+    {
+      "feature": "order_month",
+      "importance": 0.0122,
+      "correlation_coefficient": 0.0547,
+      "correlation_direction": "Risk Increasing",
+      "interpretation": "Higher feature values are associated with elevated late-delivery log-odds."
+    },
+    {
+      "feature": "order_dayofweek_Monday",
+      "importance": 0.01179,
+      "correlation_coefficient": 0.351,
+      "correlation_direction": "Risk Increasing",
+      "interpretation": "Higher feature values are associated with elevated late-delivery log-odds."
+    },
+    {
+      "feature": "Type_PAYMENT",
+      "importance": 0.01141,
+      "correlation_coefficient": 0.7093,
+      "correlation_direction": "Risk Increasing",
+      "interpretation": "Higher feature values are associated with elevated late-delivery log-odds."
+    },
+    {
+      "feature": "Order Item Discount Rate",
+      "importance": 0.00972,
+      "correlation_coefficient": -0.5826,
+      "correlation_direction": "Risk Decreasing",
+      "interpretation": "Higher feature values provide operational buffer, reducing late-delivery log-odds."
+    },
+    {
+      "feature": "Order Region_Caribbean",
+      "importance": 0.00729,
+      "correlation_coefficient": -0.2019,
+      "correlation_direction": "Risk Decreasing",
+      "interpretation": "Higher feature values provide operational buffer, reducing late-delivery log-odds."
+    },
+    {
+      "feature": "order_dayofweek_Thursday",
+      "importance": 0.00592,
+      "correlation_coefficient": -0.5213,
+      "correlation_direction": "Risk Decreasing",
+      "interpretation": "Higher feature values provide operational buffer, reducing late-delivery log-odds."
+    },
+    {
+      "feature": "Market_LATAM",
+      "importance": 0.00591,
+      "correlation_coefficient": -0.7987,
+      "correlation_direction": "Risk Decreasing",
+      "interpretation": "Higher feature values provide operational buffer, reducing late-delivery log-odds."
+    },
+    {
+      "feature": "Customer Segment_Consumer",
+      "importance": 0.0056,
+      "correlation_coefficient": -0.6858,
+      "correlation_direction": "Risk Decreasing",
+      "interpretation": "Higher feature values provide operational buffer, reducing late-delivery log-odds."
+    },
+    {
+      "feature": "Customer Country_EE. UU.",
+      "importance": 0.00528,
+      "correlation_coefficient": -0.6544,
+      "correlation_direction": "Risk Decreasing",
+      "interpretation": "Higher feature values provide operational buffer, reducing late-delivery log-odds."
+    },
+    {
+      "feature": "Order Region_South America",
+      "importance": 0.00524,
+      "correlation_coefficient": -0.5962,
+      "correlation_direction": "Risk Decreasing",
+      "interpretation": "Higher feature values provide operational buffer, reducing late-delivery log-odds."
+    },
+    {
+      "feature": "Customer Segment_Corporate",
+      "importance": 0.00508,
+      "correlation_coefficient": 0.414,
+      "correlation_direction": "Risk Increasing",
+      "interpretation": "Higher feature values are associated with elevated late-delivery log-odds."
+    }
+  ],
+  "total_features_evaluated": 89,
+  "methodology": "TreeSHAP (Lundberg et al., 2020) computed on chronological validation sample with verified Spearman rank directionality"
+}

@@ -1,0 +1,599 @@
+{
+  "overall": {
+    "total_records": 180519,
+    "total_orders": 65752,
+    "total_late": 98977,
+    "total_ontime": 81542,
+    "late_delivery_rate": 54.83,
+    "delivery_status_distribution": {
+      "Late delivery": {
+        "count": 98977,
+        "percentage": 54.83
+      },
+      "Advance shipping": {
+        "count": 41592,
+        "percentage": 23.04
+      },
+      "Shipping on time": {
+        "count": 32196,
+        "percentage": 17.84
+      },
+      "Shipping canceled": {
+        "count": 7754,
+        "percentage": 4.3
+      }
+    }
+  },
+  "shipping_modes": [
+    {
+      "shipping_mode": "First Class",
+      "total_orders": 27814,
+      "late_orders": 26513,
+      "late_rate": 95.32,
+      "avg_scheduled_days": 1.0
+    },
+    {
+      "shipping_mode": "Second Class",
+      "total_orders": 35216,
+      "late_orders": 26987,
+      "late_rate": 76.63,
+      "avg_scheduled_days": 2.0
+    },
+    {
+      "shipping_mode": "Same Day",
+      "total_orders": 9737,
+      "late_orders": 4454,
+      "late_rate": 45.74,
+      "avg_scheduled_days": 0.0
+    },
+    {
+      "shipping_mode": "Standard Class",
+      "total_orders": 107752,
+      "late_orders": 41023,
+      "late_rate": 38.07,
+      "avg_scheduled_days": 4.0
+    }
+  ],
+  "markets": [
+    {
+      "market": "Europe",
+      "total_orders": 50252,
+      "late_orders": 27743,
+      "late_rate": 55.21
+    },
+    {
+      "market": "Pacific Asia",
+      "total_orders": 41260,
+      "late_orders": 22712,
+      "late_rate": 55.05
+    },
+    {
+      "market": "USCA",
+      "total_orders": 25799,
+      "late_orders": 14138,
+      "late_rate": 54.8
+    },
+    {
+      "market": "Africa",
+      "total_orders": 11614,
+      "late_orders": 6340,
+      "late_rate": 54.59
+    },
+    {
+      "market": "LATAM",
+      "total_orders": 51594,
+      "late_orders": 28044,
+      "late_rate": 54.36
+    }
+  ],
+  "regions": [
+    {
+      "region": "Central Africa",
+      "total_orders": 1677,
+      "late_orders": 972,
+      "late_rate": 57.96
+    },
+    {
+      "region": "South Asia",
+      "total_orders": 7731,
+      "late_orders": 4350,
+      "late_rate": 56.27
+    },
+    {
+      "region": "East Africa",
+      "total_orders": 1852,
+      "late_orders": 1036,
+      "late_rate": 55.94
+    },
+    {
+      "region": "Western Europe",
+      "total_orders": 27109,
+      "late_orders": 15140,
+      "late_rate": 55.85
+    },
+    {
+      "region": "South of  USA ",
+      "total_orders": 4045,
+      "late_orders": 2256,
+      "late_rate": 55.77
+    },
+    {
+      "region": "Eastern Europe",
+      "total_orders": 3920,
+      "late_orders": 2182,
+      "late_rate": 55.66
+    },
+    {
+      "region": "East of USA",
+      "total_orders": 6915,
+      "late_orders": 3849,
+      "late_rate": 55.66
+    },
+    {
+      "region": "Southeast Asia",
+      "total_orders": 9539,
+      "late_orders": 5297,
+      "late_rate": 55.53
+    },
+    {
+      "region": "Central Asia",
+      "total_orders": 553,
+      "late_orders": 306,
+      "late_rate": 55.33
+    },
+    {
+      "region": "West Asia",
+      "total_orders": 6009,
+      "late_orders": 3322,
+      "late_rate": 55.28
+    },
+    {
+      "region": "US Center ",
+      "total_orders": 5887,
+      "late_orders": 3252,
+      "late_rate": 55.24
+    },
+    {
+      "region": "Central America",
+      "total_orders": 28341,
+      "late_orders": 15518,
+      "late_rate": 54.75
+    },
+    {
+      "region": "North Africa",
+      "total_orders": 3232,
+      "late_orders": 1762,
+      "late_rate": 54.52
+    },
+    {
+      "region": "Southern Europe",
+      "total_orders": 9431,
+      "late_orders": 5129,
+      "late_rate": 54.38
+    },
+    {
+      "region": "Eastern Asia",
+      "total_orders": 7280,
+      "late_orders": 3955,
+      "late_rate": 54.33
+    },
+    {
+      "region": "South America",
+      "total_orders": 14935,
+      "late_orders": 8111,
+      "late_rate": 54.31
+    },
+    {
+      "region": "Northern Europe",
+      "total_orders": 9792,
+      "late_orders": 5292,
+      "late_rate": 54.04
+    },
+    {
+      "region": "Oceania",
+      "total_orders": 10148,
+      "late_orders": 5482,
+      "late_rate": 54.02
+    },
+    {
+      "region": "West of USA ",
+      "total_orders": 7993,
+      "late_orders": 4313,
+      "late_rate": 53.96
+    },
+    {
+      "region": "Southern Africa",
+      "total_orders": 1157,
+      "late_orders": 617,
+      "late_rate": 53.33
+    },
+    {
+      "region": "Caribbean",
+      "total_orders": 8318,
+      "late_orders": 4415,
+      "late_rate": 53.08
+    },
+    {
+      "region": "West Africa",
+      "total_orders": 3696,
+      "late_orders": 1953,
+      "late_rate": 52.84
+    },
+    {
+      "region": "Canada",
+      "total_orders": 959,
+      "late_orders": 468,
+      "late_rate": 48.8
+    }
+  ],
+  "departments": [
+    {
+      "department": "Pet Shop",
+      "total_orders": 492,
+      "late_orders": 290,
+      "late_rate": 58.94,
+      "avg_price": 84.4,
+      "avg_discount_rate": 0.102
+    },
+    {
+      "department": "Book Shop",
+      "total_orders": 405,
+      "late_orders": 229,
+      "late_rate": 56.54,
+      "avg_price": 31.08,
+      "avg_discount_rate": 0.102
+    },
+    {
+      "department": "Health and Beauty ",
+      "total_orders": 362,
+      "late_orders": 202,
+      "late_rate": 55.8,
+      "avg_price": 293.04,
+      "avg_discount_rate": 0.101
+    },
+    {
+      "department": "Fitness",
+      "total_orders": 2479,
+      "late_orders": 1377,
+      "late_rate": 55.55,
+      "avg_price": 99.48,
+      "avg_discount_rate": 0.102
+    },
+    {
+      "department": "Outdoors",
+      "total_orders": 9686,
+      "late_orders": 5375,
+      "late_rate": 55.49,
+      "avg_price": 74.08,
+      "avg_discount_rate": 0.102
+    },
+    {
+      "department": "Technology",
+      "total_orders": 1465,
+      "late_orders": 806,
+      "late_rate": 55.02,
+      "avg_price": 709.62,
+      "avg_discount_rate": 0.102
+    },
+    {
+      "department": "Golf",
+      "total_orders": 33220,
+      "late_orders": 18198,
+      "late_rate": 54.78,
+      "avg_price": 46.6,
+      "avg_discount_rate": 0.102
+    },
+    {
+      "department": "Fan Shop",
+      "total_orders": 66861,
+      "late_orders": 36623,
+      "late_rate": 54.77,
+      "avg_price": 226.69,
+      "avg_discount_rate": 0.102
+    },
+    {
+      "department": "Apparel",
+      "total_orders": 48998,
+      "late_orders": 26825,
+      "late_rate": 54.75,
+      "avg_price": 102.57,
+      "avg_discount_rate": 0.102
+    },
+    {
+      "department": "Footwear",
+      "total_orders": 14525,
+      "late_orders": 7949,
+      "late_rate": 54.73,
+      "avg_price": 94.43,
+      "avg_discount_rate": 0.102
+    },
+    {
+      "department": "Discs Shop",
+      "total_orders": 2026,
+      "late_orders": 1103,
+      "late_rate": 54.44,
+      "avg_price": 112.98,
+      "avg_discount_rate": 0.102
+    }
+  ],
+  "monthly_trend": [
+    {
+      "month": "2015-01",
+      "total_orders": 5322,
+      "late_orders": 2880,
+      "late_rate": 54.11
+    },
+    {
+      "month": "2015-02",
+      "total_orders": 4729,
+      "late_orders": 2594,
+      "late_rate": 54.85
+    },
+    {
+      "month": "2015-03",
+      "total_orders": 5362,
+      "late_orders": 2936,
+      "late_rate": 54.76
+    },
+    {
+      "month": "2015-04",
+      "total_orders": 5126,
+      "late_orders": 2760,
+      "late_rate": 53.84
+    },
+    {
+      "month": "2015-05",
+      "total_orders": 5357,
+      "late_orders": 2951,
+      "late_rate": 55.09
+    },
+    {
+      "month": "2015-06",
+      "total_orders": 5134,
+      "late_orders": 2778,
+      "late_rate": 54.11
+    },
+    {
+      "month": "2015-07",
+      "total_orders": 5299,
+      "late_orders": 2939,
+      "late_rate": 55.46
+    },
+    {
+      "month": "2015-08",
+      "total_orders": 5273,
+      "late_orders": 2936,
+      "late_rate": 55.68
+    },
+    {
+      "month": "2015-09",
+      "total_orders": 5140,
+      "late_orders": 2914,
+      "late_rate": 56.69
+    },
+    {
+      "month": "2015-10",
+      "total_orders": 5302,
+      "late_orders": 2906,
+      "late_rate": 54.81
+    },
+    {
+      "month": "2015-11",
+      "total_orders": 5235,
+      "late_orders": 2841,
+      "late_rate": 54.27
+    },
+    {
+      "month": "2015-12",
+      "total_orders": 5371,
+      "late_orders": 2937,
+      "late_rate": 54.68
+    },
+    {
+      "month": "2016-01",
+      "total_orders": 5317,
+      "late_orders": 2955,
+      "late_rate": 55.58
+    },
+    {
+      "month": "2016-02",
+      "total_orders": 4894,
+      "late_orders": 2650,
+      "late_rate": 54.15
+    },
+    {
+      "month": "2016-03",
+      "total_orders": 5210,
+      "late_orders": 2905,
+      "late_rate": 55.76
+    },
+    {
+      "month": "2016-04",
+      "total_orders": 5097,
+      "late_orders": 2815,
+      "late_rate": 55.23
+    },
+    {
+      "month": "2016-05",
+      "total_orders": 5302,
+      "late_orders": 2951,
+      "late_rate": 55.66
+    },
+    {
+      "month": "2016-06",
+      "total_orders": 5054,
+      "late_orders": 2873,
+      "late_rate": 56.85
+    },
+    {
+      "month": "2016-07",
+      "total_orders": 5305,
+      "late_orders": 2755,
+      "late_rate": 51.93
+    },
+    {
+      "month": "2016-08",
+      "total_orders": 5334,
+      "late_orders": 2948,
+      "late_rate": 55.27
+    },
+    {
+      "month": "2016-09",
+      "total_orders": 5160,
+      "late_orders": 2837,
+      "late_rate": 54.98
+    },
+    {
+      "month": "2016-10",
+      "total_orders": 5398,
+      "late_orders": 2957,
+      "late_rate": 54.78
+    },
+    {
+      "month": "2016-11",
+      "total_orders": 5210,
+      "late_orders": 2846,
+      "late_rate": 54.63
+    },
+    {
+      "month": "2016-12",
+      "total_orders": 5269,
+      "late_orders": 2954,
+      "late_rate": 56.06
+    },
+    {
+      "month": "2017-01",
+      "total_orders": 5217,
+      "late_orders": 2797,
+      "late_rate": 53.61
+    },
+    {
+      "month": "2017-02",
+      "total_orders": 4906,
+      "late_orders": 2682,
+      "late_rate": 54.67
+    },
+    {
+      "month": "2017-03",
+      "total_orders": 5347,
+      "late_orders": 2955,
+      "late_rate": 55.26
+    },
+    {
+      "month": "2017-04",
+      "total_orders": 5212,
+      "late_orders": 2803,
+      "late_rate": 53.78
+    },
+    {
+      "month": "2017-05",
+      "total_orders": 5317,
+      "late_orders": 2843,
+      "late_rate": 53.47
+    },
+    {
+      "month": "2017-06",
+      "total_orders": 4951,
+      "late_orders": 2649,
+      "late_rate": 53.5
+    },
+    {
+      "month": "2017-07",
+      "total_orders": 5318,
+      "late_orders": 2913,
+      "late_rate": 54.78
+    },
+    {
+      "month": "2017-08",
+      "total_orders": 5305,
+      "late_orders": 2994,
+      "late_rate": 56.44
+    },
+    {
+      "month": "2017-09",
+      "total_orders": 5189,
+      "late_orders": 2814,
+      "late_rate": 54.23
+    },
+    {
+      "month": "2017-10",
+      "total_orders": 2255,
+      "late_orders": 1210,
+      "late_rate": 53.66
+    },
+    {
+      "month": "2017-11",
+      "total_orders": 2055,
+      "late_orders": 1132,
+      "late_rate": 55.09
+    },
+    {
+      "month": "2017-12",
+      "total_orders": 2124,
+      "late_orders": 1172,
+      "late_rate": 55.18
+    },
+    {
+      "month": "2018-01",
+      "total_orders": 2123,
+      "late_orders": 1195,
+      "late_rate": 56.29
+    }
+  ],
+  "scheduled_days": [
+    {
+      "scheduled_days": 0,
+      "total_orders": 9737,
+      "late_orders": 4454,
+      "late_rate": 45.74
+    },
+    {
+      "scheduled_days": 1,
+      "total_orders": 27814,
+      "late_orders": 26513,
+      "late_rate": 95.32
+    },
+    {
+      "scheduled_days": 2,
+      "total_orders": 35216,
+      "late_orders": 26987,
+      "late_rate": 76.63
+    },
+    {
+      "scheduled_days": 4,
+      "total_orders": 107752,
+      "late_orders": 41023,
+      "late_rate": 38.07
+    }
+  ],
+  "cross_market_shipping": {
+    "First Class": {
+      "Africa": 96.99,
+      "Europe": 95.82,
+      "LATAM": 94.74,
+      "Pacific Asia": 95.08,
+      "USCA": 95.16
+    },
+    "Same Day": {
+      "Africa": 44.01,
+      "Europe": 46.43,
+      "LATAM": 48.04,
+      "Pacific Asia": 43.53,
+      "USCA": 44.42
+    },
+    "Second Class": {
+      "Africa": 77.4,
+      "Europe": 77.03,
+      "LATAM": 75.56,
+      "Pacific Asia": 77.24,
+      "USCA": 76.65
+    },
+    "Standard Class": {
+      "Africa": 38.21,
+      "Europe": 38.01,
+      "LATAM": 37.89,
+      "Pacific Asia": 38.47,
+      "USCA": 37.86
+    }
+  }
+}

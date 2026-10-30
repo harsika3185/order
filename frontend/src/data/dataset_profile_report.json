@@ -1,0 +1,201 @@
+{
+  "dataset_name": "DataCoSupplyChainDataset",
+  "total_records": 180519,
+  "total_columns": 53,
+  "columns": [
+    "Type",
+    "Days for shipping (real)",
+    "Days for shipment (scheduled)",
+    "Benefit per order",
+    "Sales per customer",
+    "Delivery Status",
+    "Late_delivery_risk",
+    "Category Id",
+    "Category Name",
+    "Customer City",
+    "Customer Country",
+    "Customer Email",
+    "Customer Fname",
+    "Customer Id",
+    "Customer Lname",
+    "Customer Password",
+    "Customer Segment",
+    "Customer State",
+    "Customer Street",
+    "Customer Zipcode",
+    "Department Id",
+    "Department Name",
+    "Latitude",
+    "Longitude",
+    "Market",
+    "Order City",
+    "Order Country",
+    "Order Customer Id",
+    "order date (DateOrders)",
+    "Order Id",
+    "Order Item Cardprod Id",
+    "Order Item Discount",
+    "Order Item Discount Rate",
+    "Order Item Id",
+    "Order Item Product Price",
+    "Order Item Profit Ratio",
+    "Order Item Quantity",
+    "Sales",
+    "Order Item Total",
+    "Order Profit Per Order",
+    "Order Region",
+    "Order State",
+    "Order Status",
+    "Order Zipcode",
+    "Product Card Id",
+    "Product Category Id",
+    "Product Description",
+    "Product Image",
+    "Product Name",
+    "Product Price",
+    "Product Status",
+    "shipping date (DateOrders)",
+    "Shipping Mode"
+  ],
+  "duplicate_rows": 0,
+  "unique_orders": 65752,
+  "unique_order_items": 180519,
+  "items_per_order": {
+    "min": 1,
+    "max": 5,
+    "mean": 2.745452609806546,
+    "median": 3.0,
+    "single_item_orders": 19850,
+    "multi_item_orders": 45902
+  },
+  "inconsistent_target_within_order": 0,
+  "target_distribution": {
+    "counts": {
+      "1": 98977,
+      "0": 81542
+    },
+    "percentages": {
+      "1": 54.83,
+      "0": 45.17
+    }
+  },
+  "date_ranges": {
+    "order date (DateOrders)": {
+      "min": "2015-01-01 00:00:00",
+      "max": "2018-01-31 23:38:00",
+      "missing_dates": 0
+    },
+    "shipping date (DateOrders)": {
+      "min": "2015-01-03 00:00:00",
+      "max": "2018-02-06 22:14:00",
+      "missing_dates": 0
+    }
+  },
+  "missing_values": {
+    "Customer Lname": 8,
+    "Customer Zipcode": 3,
+    "Order Zipcode": 155679,
+    "Product Description": 180519
+  },
+  "categorical_summary": {
+    "Type": {
+      "unique_count": 4,
+      "top_5": {
+        "DEBIT": 69295,
+        "TRANSFER": 49883,
+        "PAYMENT": 41725,
+        "CASH": 19616
+      }
+    },
+    "Delivery Status": {
+      "unique_count": 4,
+      "top_5": {
+        "Late delivery": 98977,
+        "Advance shipping": 41592,
+        "Shipping on time": 32196,
+        "Shipping canceled": 7754
+      }
+    },
+    "Shipping Mode": {
+      "unique_count": 4,
+      "top_5": {
+        "Standard Class": 107752,
+        "Second Class": 35216,
+        "First Class": 27814,
+        "Same Day": 9737
+      }
+    },
+    "Customer Segment": {
+      "unique_count": 3,
+      "top_5": {
+        "Consumer": 93504,
+        "Corporate": 54789,
+        "Home Office": 32226
+      }
+    },
+    "Department Name": {
+      "unique_count": 11,
+      "top_5": {
+        "Fan Shop": 66861,
+        "Apparel": 48998,
+        "Golf": 33220,
+        "Footwear": 14525,
+        "Outdoors": 9686
+      }
+    },
+    "Category Name": {
+      "unique_count": 50,
+      "top_5": {
+        "Cleats": 24551,
+        "Men's Footwear": 22246,
+        "Women's Apparel": 21035,
+        "Indoor/Outdoor Games": 19298,
+        "Fishing": 17325
+      }
+    },
+    "Order Region": {
+      "unique_count": 23,
+      "top_5": {
+        "Central America": 28341,
+        "Western Europe": 27109,
+        "South America": 14935,
+        "Oceania": 10148,
+        "Northern Europe": 9792
+      }
+    },
+    "Market": {
+      "unique_count": 5,
+      "top_5": {
+        "LATAM": 51594,
+        "Europe": 50252,
+        "Pacific Asia": 41260,
+        "USCA": 25799,
+        "Africa": 11614
+      }
+    },
+    "Order Country": {
+      "unique_count": 164,
+      "top_5": {
+        "Estados Unidos": 24840,
+        "Francia": 13222,
+        "M\u00e9xico": 13172,
+        "Alemania": 9564,
+        "Australia": 8497
+      }
+    }
+  },
+  "delivery_status_vs_target_crosstab": {
+    "0": {
+      "Advance shipping": 41592,
+      "Late delivery": 0,
+      "Shipping canceled": 7754,
+      "Shipping on time": 32196
+    },
+    "1": {
+      "Advance shipping": 0,
+      "Late delivery": 98977,
+      "Shipping canceled": 0,
+      "Shipping on time": 0
+    }
+  }
+}

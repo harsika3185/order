@@ -1,0 +1,11 @@
+{
+  "name": "order-logistics-intelligence",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Order-Time Late Delivery Risk Prediction and Operations Review Framework - DATA THIRAN 2026 (DT-LSC-04)",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview"
+  }
+}

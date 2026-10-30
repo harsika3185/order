@@ -278,3 +278,44 @@ Included analytics and reporting artifacts (`outputs/`):
 - [x] **Explainable AI (TreeSHAP):** Live mathematical feature attribution for both global model behavior and individual order predictions.
 - [x] **Prescriptive Operations Review:** Real-time triage queue with one-click warehouse intervention protocols and empirical ROI insights.
 - [x] **100% Portable & Self-Contained:** Strict relative paths, unified `requirements.txt`, clean virtual environment setup, and Windows one-click launchers.
+- [x] **Cloud & Vercel Ready:** Fully configured with `vercel.json`, automated build delegation, and hybrid offline/online API resilience.
+
+---
+
+## 10. Deploying to Vercel (Production Cloud Hosting)
+
+This project is pre-configured for **instant one-click deployment on Vercel**.
+
+### Method 1: Deploy with Vercel Web Dashboard (Recommended)
+
+1. Open [vercel.com](https://vercel.com) and log in with your GitHub account (`harsika3185`).
+2. Click **"Add New..."** → **"Project"**.
+3. Import your GitHub repository: **`harsika3185/order`**.
+4. Vercel automatically detects the project settings via the included `vercel.json`:
+   - **Framework Preset:** `Vite`
+   - **Root Directory:** `./` (or `frontend`)
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `frontend/dist` (or `dist`)
+5. Click **"Deploy"**.
+6. Within 30–60 seconds, your enterprise logistics dashboard will be live worldwide with an official Vercel URL (e.g., `https://order-three.vercel.app`).
+
+### Method 2: Deploy with Vercel CLI
+
+In your terminal:
+```bash
+# 1. Login to your Vercel account
+npx vercel login
+
+# 2. Deploy directly to production
+npx vercel --prod
+```
+
+### Backend Integration on Vercel (Optional)
+The deployed frontend features a **built-in hybrid architecture**:
+- **Standalone:** Out of the box, all analytics, charts, high-risk orders, explainability, benchmarks, and risk predictions are fully functional using the bundled model intelligence.
+- **Connected Cloud Backend (Optional):** If you deploy the FastAPI backend to Render, Railway, or Fly.io, simply add an environment variable in Vercel:
+  ```
+  VITE_API_BASE_URL = https://your-backend-url.onrender.com
+  ```
+  The frontend will automatically proxy live requests to your cloud FastAPI instance.
+
