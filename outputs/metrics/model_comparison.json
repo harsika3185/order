@@ -1,0 +1,230 @@
+{
+  "models": {
+    "Logistic Regression": {
+      "validation": {
+        "accuracy": 0.6921,
+        "precision": 0.8391,
+        "recall": 0.5382,
+        "f1_score": 0.6558,
+        "roc_auc": 0.7377,
+        "pr_auc": 0.8101,
+        "confusion_matrix": [
+          [
+            11771,
+            1659
+          ],
+          [
+            7427,
+            8654
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.6933,
+        "precision": 0.8439,
+        "recall": 0.539,
+        "f1_score": 0.6579,
+        "roc_auc": 0.7483,
+        "pr_auc": 0.8179,
+        "confusion_matrix": [
+          [
+            5157,
+            706
+          ],
+          [
+            3265,
+            3818
+          ]
+        ]
+      }
+    },
+    "Random Forest": {
+      "validation": {
+        "accuracy": 0.7183,
+        "precision": 0.8475,
+        "recall": 0.589,
+        "f1_score": 0.695,
+        "roc_auc": 0.7685,
+        "pr_auc": 0.829,
+        "confusion_matrix": [
+          [
+            11725,
+            1705
+          ],
+          [
+            6609,
+            9472
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.7184,
+        "precision": 0.851,
+        "recall": 0.5885,
+        "f1_score": 0.6958,
+        "roc_auc": 0.7693,
+        "pr_auc": 0.8304,
+        "confusion_matrix": [
+          [
+            5133,
+            730
+          ],
+          [
+            2915,
+            4168
+          ]
+        ]
+      }
+    },
+    "LightGBM": {
+      "validation": {
+        "accuracy": 0.718,
+        "precision": 0.8465,
+        "recall": 0.5893,
+        "f1_score": 0.6949,
+        "roc_auc": 0.7701,
+        "pr_auc": 0.8333,
+        "confusion_matrix": [
+          [
+            11712,
+            1718
+          ],
+          [
+            6604,
+            9477
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.7168,
+        "precision": 0.8461,
+        "recall": 0.5897,
+        "f1_score": 0.695,
+        "roc_auc": 0.7709,
+        "pr_auc": 0.8351,
+        "confusion_matrix": [
+          [
+            5103,
+            760
+          ],
+          [
+            2906,
+            4177
+          ]
+        ],
+        "confusion_matrix_threshold_0_50": [
+          [
+            5103,
+            760
+          ],
+          [
+            2906,
+            4177
+          ]
+        ],
+        "confusion_matrix_threshold_0_45": [
+          [
+            4965,
+            898
+          ],
+          [
+            2812,
+            4271
+          ]
+        ],
+        "metrics_at_threshold_0_45": {
+          "accuracy": 0.7134,
+          "precision": 0.8263,
+          "recall": 0.603,
+          "f1_score": 0.6972,
+          "confusion_matrix": [
+            [
+              4965,
+              898
+            ],
+            [
+              2812,
+              4271
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "threshold_analysis": [
+    {
+      "threshold": 0.2,
+      "recall": 1.0,
+      "precision": 0.5597,
+      "f1_score": 0.7177,
+      "flagged_orders_count": 28734,
+      "flagged_orders_percentage": 97.37
+    },
+    {
+      "threshold": 0.3,
+      "recall": 0.9951,
+      "precision": 0.5625,
+      "f1_score": 0.7188,
+      "flagged_orders_count": 28448,
+      "flagged_orders_percentage": 96.4
+    },
+    {
+      "threshold": 0.35,
+      "recall": 0.9121,
+      "precision": 0.5947,
+      "f1_score": 0.72,
+      "flagged_orders_count": 24662,
+      "flagged_orders_percentage": 83.57
+    },
+    {
+      "threshold": 0.4,
+      "recall": 0.7235,
+      "precision": 0.705,
+      "f1_score": 0.7142,
+      "flagged_orders_count": 16503,
+      "flagged_orders_percentage": 55.92
+    },
+    {
+      "threshold": 0.45,
+      "recall": 0.5947,
+      "precision": 0.8355,
+      "f1_score": 0.6948,
+      "flagged_orders_count": 11446,
+      "flagged_orders_percentage": 38.79
+    },
+    {
+      "threshold": 0.5,
+      "recall": 0.5893,
+      "precision": 0.8465,
+      "f1_score": 0.6949,
+      "flagged_orders_count": 11195,
+      "flagged_orders_percentage": 37.94
+    },
+    {
+      "threshold": 0.55,
+      "recall": 0.5888,
+      "precision": 0.848,
+      "f1_score": 0.695,
+      "flagged_orders_count": 11165,
+      "flagged_orders_percentage": 37.83
+    },
+    {
+      "threshold": 0.6,
+      "recall": 0.5875,
+      "precision": 0.848,
+      "f1_score": 0.6941,
+      "flagged_orders_count": 11140,
+      "flagged_orders_percentage": 37.75
+    },
+    {
+      "threshold": 0.7,
+      "recall": 0.5437,
+      "precision": 0.867,
+      "f1_score": 0.6683,
+      "flagged_orders_count": 10084,
+      "flagged_orders_percentage": 34.17
+    }
+  ],
+  "best_model": "LightGBM",
+  "optimal_threshold": 0.45
+}

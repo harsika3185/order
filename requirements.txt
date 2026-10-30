@@ -1,0 +1,28 @@
+# ==============================================================================
+# Order-Time Late Delivery Risk Prediction and Operations Review Framework
+# Hackathon: DATA THIRAN 2026 | Problem ID: DT-LSC-04
+# Python Dependencies Specification
+# ==============================================================================
+
+# Core Machine Learning & Scientific Computing
+scikit-learn>=1.3.0
+lightgbm>=4.0.0
+xgboost>=2.0.0
+shap>=0.42.0
+joblib>=1.3.0
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Enterprise FastAPI Backend & Async Server
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+pydantic>=2.0.0
+python-multipart>=0.0.6
+
+# Exploratory Analysis & Plotting
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Testing & Client HTTP Requests
+httpx>=0.24.0

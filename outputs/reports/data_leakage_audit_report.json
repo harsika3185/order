@@ -1,0 +1,69 @@
+{
+  "total_columns": 53,
+  "target_variable": {
+    "Late_delivery_risk": "Binary classification target (1 = Late Delivery, 0 = On-Time / Early / Normal)."
+  },
+  "critical_leakage_excluded": {
+    "Days for shipping (real)": "Direct post-delivery metric. Represents actual days taken to ship and deliver, which is known only after delivery completes.",
+    "Delivery Status": "Direct outcome target variable ('Late delivery', 'Advance shipping', 'Shipping on time', 'Shipping canceled'). Perfectly correlates with Late_delivery_risk.",
+    "shipping date (DateOrders)": "Timestamp of physical dispatch/shipment from warehouse. Occurs days after order placement.",
+    "Order Status": "Status of the order post-placement (e.g. COMPLETE, CLOSED, CANCELED, PROCESSING). Status updates occur during and after fulfillment lifecycle.",
+    "Product Status": "Static indicator (100% 0 in dataset) with potential fulfillment-state connotations."
+  },
+  "financial_reconciliation_excluded": {
+    "Benefit per order": "Financial profit calculated post-transaction/returns/chargebacks.",
+    "Order Profit Per Order": "Duplicate of benefit per order, known after delivery and reconciliation.",
+    "Order Item Profit Ratio": "Derived from actual profit which is post-fulfillment reconciled."
+  },
+  "identifiers_and_noise_excluded": {
+    "Customer Email": "PII / Masked string, high cardinality, zero predictive generalization.",
+    "Customer Password": "PII / Masked password hash.",
+    "Customer Fname": "PII First Name.",
+    "Customer Lname": "PII Last Name.",
+    "Customer Id": "Arbitrary customer ID sequence.",
+    "Order Customer Id": "Redundant customer ID duplicate.",
+    "Order Id": "Unique order identifier.",
+    "Order Item Id": "Unique order item identifier.",
+    "Order Item Cardprod Id": "Internal RFID barcode artifact.",
+    "Product Card Id": "Internal database product key.",
+    "Product Category Id": "Redundant ID (Category Name is retained).",
+    "Category Id": "Redundant ID (Category Name is retained).",
+    "Department Id": "Redundant ID (Department Name is retained).",
+    "Product Image": "URL link to product image.",
+    "Product Description": "100% missing values (all null).",
+    "Order Zipcode": "86.2% missing values (155,679 missing out of 180,519).",
+    "Customer Street": "Freeform address text with extreme noise/cardinality."
+  },
+  "retained_order_time_features": {
+    "Days for shipment (scheduled)": "Agreed SLA days for shipment decided at order placement.",
+    "Shipping Mode": "Carrier service level selected by customer at checkout (Standard Class, First Class, Second Class, Same Day).",
+    "Type": "Payment method chosen at order creation (DEBIT, TRANSFER, PAYMENT, CASH).",
+    "Customer Segment": "Customer classification at purchase (Consumer, Corporate, Home Office).",
+    "Department Name": "Store department of ordered item (e.g., Apparel, Fan Shop, Footwear).",
+    "Category Name": "Product category (e.g., Cleats, Men's Footwear, Fishing).",
+    "Order Item Quantity": "Number of units ordered.",
+    "Order Item Product Price": "Unit catalog price of item.",
+    "Order Item Discount Rate": "Applied promotional discount rate.",
+    "Order Item Discount": "Promotional discount dollar value.",
+    "Sales": "Gross sale value (Item Quantity * Product Price).",
+    "Order Item Total": "Net sale value after discount.",
+    "Market": "Global destination market (LATAM, Europe, Pacific Asia, USCA, Africa).",
+    "Order Region": "Specific geographic destination region (e.g., Western Europe, Central America, Oceania).",
+    "Order Country": "Destination country.",
+    "Order State": "Destination state.",
+    "Order City": "Destination city.",
+    "Customer Country": "Country of origin/store.",
+    "Customer State": "State of origin/store.",
+    "Customer City": "City of origin/store.",
+    "Latitude": "Store location latitude.",
+    "Longitude": "Store location longitude.",
+    "order date (DateOrders)": "Raw order timestamp used to engineer Temporal Features (Month, Day of Week, Hour, Weekend flag, Quarter)."
+  },
+  "counts": {
+    "critical_leakage_count": 5,
+    "financial_reconciliation_count": 3,
+    "identifiers_and_noise_count": 17,
+    "retained_features_count": 23,
+    "target_count": 1
+  }
+}
